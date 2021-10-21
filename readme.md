@@ -18,9 +18,15 @@ Professores: Rodrigo Spotorno Vieira, Paula Conceição Simões
 
 
 
+
+
+
 ## Conceito chave
 
   **EU SEI O QUE É MAS NÃO SEI COMO EXPLICAR :'(**
+
+
+
 
 
 
@@ -30,9 +36,15 @@ Professores: Rodrigo Spotorno Vieira, Paula Conceição Simões
 
 
 
+
+
+
 ## Recursos necessários
 
   Para modelagem do projeto pretende-se usar peças em 3d construídas pela equipe. A parte eletrônica da proposta será composta pelo ESP32 com o módulo de câmera. Na parte da programação, a interpretação da imagem, captada através do módulo de câmera, será feita usando C++. Também será utilizado o banco de dados Firebase, para armazenar os frames capturados. Por fim, para analise das expressões, será aplicado inteligência artificial, através da biblioteca OpenCV, em python.
+
+
+
 
 
 
@@ -42,7 +54,13 @@ Professores: Rodrigo Spotorno Vieira, Paula Conceição Simões
 
 
 
+
+
+
 ## Tempo necessário
+
+
+
 
 
 
