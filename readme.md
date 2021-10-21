@@ -1,6 +1,6 @@
-## Repositório destinado a armazenar e organizar as ideias e produções relacionadas ao Festival Marista de Robótica 2021
+## Repositório da equipe Delta T para o Festival Marista de Robótica 2021
 
 
-##### Equipe: Delta T (Porque somos atemporais) ![alt text](https://media.discordapp.net/attachments/746522955227594806/900526796641009684/Delta_T_logo_sem_fundo.png?width=70&height=70 "Logo Delta T")
-##### Integrantes: Guilherme de Medeiros Burkert, Manoela Abreu Almeida, Rômulo Tavares Maciel
-##### Professores: Rodrigo Spotorno Vieira, Paula Conceição Simões
+![alt text](https://cdn.discordapp.com/attachments/900536288606847036/900707332252635146/logo.png "Logo Delta T")
+Integrantes: Guilherme de Medeiros Burkert, Manoela Abreu Almeida, Rômulo Tavares Maciel
+Professores: Rodrigo Spotorno Vieira, Paula Conceição Simões
