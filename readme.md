@@ -23,7 +23,7 @@ Professores: Rodrigo Spotorno Vieira, Paula Conceição Simões
 
 ## Conceito chave
 
-  **EU SEI O QUE É MAS NÃO SEI COMO EXPLICAR :'(**
+  O projeto é voltado para criação do dispositivo SAFE (Sistema de Análise Facial de Expressões), que poderá auxiliar a população durante a pandemia. 
 
 
 
