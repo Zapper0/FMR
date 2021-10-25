@@ -59,7 +59,19 @@ Professores: Rodrigo Spotorno Vieira, Paula Conceição Simões
 
 ## Tempo necessário
 
+O projeto foi organizado em etapas, onde cada uma possui um prazo, possiblitando, no final da proposta, a construção do dispositivo SAFE. As etapas do projeto são:
 
+
+| Etapa                                 | Inicio        | Fim         |
+| --------------------------------------|:-------------:| -----------:|
+| Definir o assunto                     |  |  |
+| Organizar o cronograma                |  |  |
+| Fazer o pré-projeto                   |  |  |
+| Fazer a pesquisa sobre o assunto      |  |  |
+| Estudar os conceitos                  |  |  |
+| Montar a parte estrutural             |  |  |
+| Codificar o reconhecimento e análise  |  |  |
+| Conclusão do projeto                  |  |  |
 
 
 
