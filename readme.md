@@ -62,16 +62,15 @@ Professores: Rodrigo Spotorno Vieira, Paula Conceição Simões
 O projeto foi organizado em etapas, onde cada uma possui um prazo, possiblitando, no final da proposta, a construção do dispositivo SAFE. As etapas do projeto são:
 
 
-| Etapa                                 | Inicio        | Fim         |
-| --------------------------------------|:-------------:| -----------:|
-| Definir o assunto                     |  |  |
-| Organizar o cronograma                |  |  |
-| Fazer o pré-projeto                   |  |  |
-| Fazer a pesquisa sobre o assunto      |  |  |
-| Estudar os conceitos                  |  |  |
-| Montar a parte estrutural             |  |  |
-| Codificar o reconhecimento e análise  |  |  |
-| Conclusão do projeto                  |  |  |
+| Etapa                                      | Inicio        | Fim         |
+| -------------------------------------------|:-------------:| -----------:|
+| Definir o assunto                          | 20/06         | 17/09       |
+| Organizar o cronograma                     | 17/09         | 21/09       |
+| Fazer o pré-projeto                        | 21/09         | 15/10       |
+| Estudar os conceitos para criação do SAFE  | 20/10         | 27/10       |
+| Montar a parte estrutural                  | 27/10         | 03/11       |
+| Codificar o reconhecimento e análise       | 27/10         | 10/11       |
+| Conclusão do projeto                       | 10/11         | 17/11       |
 
 
 
