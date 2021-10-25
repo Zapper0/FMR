@@ -63,7 +63,7 @@ O projeto foi organizado em etapas, onde cada uma possui um prazo, possiblitando
 
 
 | Etapa                                      | Inicio        | Fim         |
-| -------------------------------------------|:-------------:| -----------:|
+| -------------------------------------------|:-------------:| :----------:|
 | Definir o assunto                          | 20/06         | 17/09       |
 | Organizar o cronograma                     | 17/09         | 21/09       |
 | Fazer o pré-projeto                        | 21/09         | 15/10       |
