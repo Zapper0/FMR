@@ -78,3 +78,4 @@ O projeto foi organizado em etapas, onde cada uma possui um prazo, possiblitando
 
 ## Diferenciais do projeto
 
+  O dispositivo projetado possibilita a integração entre a programação de reconhecimento facial com as diferentes emoções e expressões humanas, através da análise dos padrões nas feições, possibilitando o reconhecimento do estado emocional do utilizador do equipamento. 
