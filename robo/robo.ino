@@ -9,14 +9,18 @@ RH_ASK driver;
 
 void setup()
 {
-  Serial.begin(115200); // Debugging only
+  Serial.begin(115200);
+
   pinMode(ledPin, OUTPUT);
   pinMode(lMotor, OUTPUT);
   pinMode(rMotor, OUTPUT);
+
+  // Set relays off
   digitalWrite(lMotor, HIGH);
   digitalWrite(rMotor, HIGH);
+
   if (!driver.init())
-    Serial.println("init failed");
+    Serial.println("init failed"); // Make sure radio is working
 }
 
 void loop()
@@ -25,25 +29,21 @@ void loop()
   uint8_t buflen = sizeof(buf);
 
   // blink the led when a message is received
-  if (driver.recv(buf, &buflen)) // Non-blocking
+  if (driver.recv(buf, &buflen)) // Check if received packet is correct size
   {
     int i;
-    // Message with a good checksum received, dump it.
-    // Serial.print("Message: ");
-    // Serial.println((char *)buf);
+    // Message with a good checksum received, proceed
 
+    // Blink led
     digitalWrite(ledPin, HIGH);
     delay(100);
     digitalWrite(ledPin, LOW);
 
-    Serial.print((char *) buf);
+    // Print received message (debug)
+    Serial.print((char *)buf);
     Serial.print(" | ");
     Serial.print(String((char *)buf == "l"));
     Serial.print(" | ");
     Serial.println(strcmp((char *)buf, "r"));
-    if((char *) buf == 'l')
-    {
-      Serial.println("left");
-    }
-    }
+  }
 }
