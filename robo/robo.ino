@@ -2,8 +2,8 @@
 #include <SPI.h> // Not actualy used but needed to compile
 
 int ledPin = 12;
-int lMotor = 7;
-int rMotor = 8;
+int lMotor = 5;
+int rMotor = 6;
 
 RH_ASK driver;
 
@@ -39,11 +39,25 @@ void loop()
     delay(100);
     digitalWrite(ledPin, LOW);
 
-    // Print received message (debug)
-    Serial.print((char *)buf);
-    Serial.print(" | ");
-    Serial.print(String((char *)buf == "l"));
-    Serial.print(" | ");
-    Serial.println(strcmp((char *)buf, "r"));
+    char msg = ((char *)buf)[0];
+
+    // Control motors
+    if (msg == 'l')
+    {
+      Serial.println("Left");
+      digitalWrite(lMotor, LOW);
+    }
+    else if (msg == 'r')
+    {
+      Serial.println("Right");
+      digitalWrite(rMotor, LOW);
+    }
+    else
+    {
+      Serial.println("Stop");
+      analogWrite(lMotor, 255);
+      analogWrite(rMotor, 255);
+    }
+    Serial.println(msg);
   }
 }
