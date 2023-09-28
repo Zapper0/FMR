@@ -23,18 +23,33 @@ void loop()
 {
     if (digitalRead(leftButton) == LOW)
     {
-        digitalWrite(ledPin, HIGH);     // Turn on a light to show transmitting
+        digitalWrite(ledPin, HIGH); // Turn on a light to show transmitting
+
         driver.send((uint8_t *)"l", 1); // Send a message
         driver.waitPacketSent();        // Wait for message to be sent
-        delay(100);
+
+        while (digitalRead(leftButton) == LOW) // Await while button is pressed
+            ;
+
+        driver.send((uint8_t *)NULL, 1); // Send null message
+        driver.waitPacketSent();         // Wait for message to be sent
+
         digitalWrite(ledPin, LOW); // Turn off the light to show end of transmission
     }
+
     if (digitalRead(rightButton) == LOW)
     {
-        digitalWrite(ledPin, HIGH);     // Turn on a light to show transmitting
+        digitalWrite(ledPin, HIGH); // Turn on a light to show transmitting
+
         driver.send((uint8_t *)"r", 1); // Send a message
         driver.waitPacketSent();        // Wait for message to be sent
-        delay(100);
+
+        while (digitalRead(rightButton) == LOW)
+            ;
+
+        driver.send((uint8_t *)NULL, 1); // Send null message
+        driver.waitPacketSent();         // Wait for message to be sent
+
         digitalWrite(ledPin, LOW); // Turn off the light to show end of transmission
     }
 }
