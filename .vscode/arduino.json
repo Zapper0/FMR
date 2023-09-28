@@ -1,5 +1,5 @@
 {
-    "port": "/dev/ttyUSB0",
+    "port": "/dev/ttyUSB2",
     "board": "arduino:avr:uno",
     "sketch": "robo/robo.ino",
     "programmer": "arduinoisp"

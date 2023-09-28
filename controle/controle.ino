@@ -27,9 +27,9 @@ void loop()
 
         driver.send((uint8_t *)"l", 1); // Send a message
         driver.waitPacketSent();        // Wait for message to be sent
-
+        
         while (digitalRead(leftButton) == LOW) // Await while button is pressed
-            ;
+            digitalWrite(ledPin, HIGH);
 
         driver.send((uint8_t *)NULL, 1); // Send null message
         driver.waitPacketSent();         // Wait for message to be sent
@@ -45,7 +45,7 @@ void loop()
         driver.waitPacketSent();        // Wait for message to be sent
 
         while (digitalRead(rightButton) == LOW)
-            ;
+            digitalWrite(ledPin, HIGH);
 
         driver.send((uint8_t *)NULL, 1); // Send null message
         driver.waitPacketSent();         // Wait for message to be sent
