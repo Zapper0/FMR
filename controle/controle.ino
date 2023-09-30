@@ -18,38 +18,30 @@ void setup()
     if (!driver.init())
         Serial.println("init failed"); // Make sure radio is working
 }
+void send_message(char * msg)
+{
+    digitalWrite(ledPin, HIGH); // Turn on a light to show transmitting
 
+    driver.send((uint8_t *)msg, 1); // Send a message
+    driver.waitPacketSent();        // Wait for message to be sent
+    
+    while (digitalRead(leftButton) == LOW) // Await while button is pressed
+        digitalWrite(ledPin, HIGH);
+
+    driver.send((uint8_t *)NULL, 1); // Send null message
+    driver.waitPacketSent();         // Wait for message to be sent
+
+    digitalWrite(ledPin, LOW); // Turn off the light to show end of transmission   
+}
 void loop()
 {
-    if (digitalRead(leftButton) == LOW)
+    int left = digitalRead(leftButton); //save the readings
+    int right = digitalRead(rightButton);
+    if (left || right)
     {
-        digitalWrite(ledPin, HIGH); // Turn on a light to show transmitting
-
-        driver.send((uint8_t *)"l", 1); // Send a message
-        driver.waitPacketSent();        // Wait for message to be sent
-        
-        while (digitalRead(leftButton) == LOW) // Await while button is pressed
-            digitalWrite(ledPin, HIGH);
-
-        driver.send((uint8_t *)NULL, 1); // Send null message
-        driver.waitPacketSent();         // Wait for message to be sent
-
-        digitalWrite(ledPin, LOW); // Turn off the light to show end of transmission
-    }
-
-    if (digitalRead(rightButton) == LOW)
-    {
-        digitalWrite(ledPin, HIGH); // Turn on a light to show transmitting
-
-        driver.send((uint8_t *)"r", 1); // Send a message
-        driver.waitPacketSent();        // Wait for message to be sent
-
-        while (digitalRead(rightButton) == LOW)
-            digitalWrite(ledPin, HIGH);
-
-        driver.send((uint8_t *)NULL, 1); // Send null message
-        driver.waitPacketSent();         // Wait for message to be sent
-
-        digitalWrite(ledPin, LOW); // Turn off the light to show end of transmission
+        delay(10);
+        if (left && right) ? send_message("f") // compare the values and send messages
+        : (left) ? send_message("l") 
+        : (right) ? send_message("r") : send_message(NULL);
     }
 }

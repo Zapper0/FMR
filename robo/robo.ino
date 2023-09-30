@@ -42,15 +42,21 @@ void loop()
     char msg = ((char *)buf)[0];
 
     // Control motors
-    if (msg == 'l')
+    if (msg == 'f')
     {
-      Serial.println("Left");
+      Serial.println("Front");
       digitalWrite(lMotor, LOW);
+      digitalWrite(rMotor, LOW);
     }
     else if (msg == 'r')
     {
       Serial.println("Right");
       digitalWrite(rMotor, LOW);
+    }
+    else if (msg == 'l')
+    {
+      Serial.println("Left");
+      digitalWrite(lMotor, LOW);
     }
     else
     {
