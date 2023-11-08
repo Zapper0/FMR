@@ -44,20 +44,20 @@ void loop()
     // Control motors
     if (msg == 'l')
     {
-      Serial.println("Left");
+      // Serial.println("Left");
       digitalWrite(lMotor, LOW);
     }
     else if (msg == 'r')
     {
-      Serial.println("Right");
+      // Serial.println("Right");
       digitalWrite(rMotor, LOW);
     }
     else
     {
-      Serial.println("Stop");
-      analogWrite(lMotor, 255);
-      analogWrite(rMotor, 255);
+      // Serial.println("Stop");
+      digitalWrite(lMotor, HIGH);
+      digitalWrite(rMotor, HIGH);
     }
-    Serial.println(msg);
+    // Serial.println(msg);
   }
 }
