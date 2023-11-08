@@ -14,6 +14,9 @@ void setup()
     pinMode(ledPin, OUTPUT);
     pinMode(leftButton, INPUT_PULLUP);
     pinMode(rightButton, INPUT_PULLUP);
+    pinMode(13, OUTPUT);
+
+    digitalWrite(13, HIGH);
 
     if (!driver.init())
         Serial.println("init failed"); // Make sure radio is working

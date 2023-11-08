@@ -2,8 +2,8 @@
 #include <SPI.h> // Not actualy used but needed to compile
 
 int ledPin = 12;
-int lMotor = 5;
-int rMotor = 6;
+int lMotor = 4;
+int rMotor = 5;
 
 RH_ASK driver;
 
